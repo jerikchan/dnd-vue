@@ -48,3 +48,7 @@ export function validateTagProp (tag) {
   }
   return true;
 }
+
+export function renderlessComponent (ctx, props) {
+  return ctx.$scopedSlots.default(Object.assign({}, props));
+}
