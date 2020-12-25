@@ -99,7 +99,8 @@ export default {
     },
     getGhostParent: Function,
     'drop-ready': Function,
-    dropPlaceholder: [Object, Boolean]
+    dropPlaceholder: [Object, Boolean],
+    disabled: { type: Boolean, default: false },
   },
   render: function (createElement) {
     const tagProps = getTagProps(this);
