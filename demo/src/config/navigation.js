@@ -27,7 +27,8 @@ export default [
     page('drag-class', 'Drag and Drop classes'),
     page('drag-delay', 'Drag begin delay of 500ms'),
     page('transition-duration', 'Animation duration 1000ms'),
-    page('table', 'Custom tag (table)')
+    page('table', 'Custom tag (table)'),
+    page('snappable', 'Snappable')
   ]),
   section('Interaction', [
     page('events', 'Callbacks and Events')

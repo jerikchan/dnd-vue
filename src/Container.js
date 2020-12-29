@@ -11,7 +11,8 @@ const eventEmitterMap = {
   'drop': 'onDrop',
   'drag-enter': 'onDragEnter',
   'drag-leave': 'onDragLeave',
-  'drop-ready': 'onDropReady'
+  'drop-ready': 'onDropReady',
+  'snap': 'onSnap',
 };
 
 function getContainerOptions (props, context) {
@@ -101,6 +102,7 @@ export default {
     'drop-ready': Function,
     dropPlaceholder: [Object, Boolean],
     disabled: { type: Boolean, default: false },
+    snappable: { type: Boolean, default: false },
   },
   render: function (createElement) {
     const tagProps = getTagProps(this);
