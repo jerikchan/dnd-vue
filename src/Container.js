@@ -103,6 +103,7 @@ export default {
     dropPlaceholder: [Object, Boolean],
     disabled: { type: Boolean, default: false },
     snappable: { type: Boolean, default: false },
+    elementGuidelines: { type: Array, default: () => [] },
   },
   render: function (createElement) {
     const tagProps = getTagProps(this);
