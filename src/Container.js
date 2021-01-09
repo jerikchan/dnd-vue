@@ -104,6 +104,7 @@ export default {
     disabled: { type: Boolean, default: false },
     snappable: { type: Boolean, default: false },
     elementGuidelines: { type: Array, default: () => [] },
+    dragOnPoint: { type: Boolean, default: false },
   },
   render: function (createElement) {
     const tagProps = getTagProps(this);
